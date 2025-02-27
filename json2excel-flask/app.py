@@ -51,6 +51,9 @@ def convert_json_to_excel(json_path, output_path):
     with open(json_path, "r", encoding="utf-8") as file:
         json_data = json.load(file)
 
+if __name__ == "__main__":
+    app.run()
+
     # Convert the JSON data to a Pandas DF
     df = json_to_dataframe(json_data)
 
