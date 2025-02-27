@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaked Data to Excel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body class="container mt-5">
+    <h2 class="text-center">Upload JSON File</h2>
+    <form method="post" enctype="multipart/form-data" class="text-center">
+        <input type="file" name="file" class="form-control mb-3">
+        <button type="submit" class="btn btn-primary">Upload</button
+    </form>
+    {% if download_link %}
+    <div class="text-center mt-3">
+        <a href="{{ download_link }}" class="btn btn-success">Download Excel File</a>
+    </div>
+    {% endif %}
+</body>
+</html>
